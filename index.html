@@ -36,24 +36,13 @@
         <button type="button" class="btn btn-danger" id="losstwo">-1</button>
       </div>
     </div>
-    <div class="dropdown">
-      <button
-        class="btn btn-secondary dropdown-toggle"
-        type="button"
-        id="dropdownMenuButton"
-        data-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false"
-      >
-        Dropdown button
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">Standard</a>
-        <a class="dropdown-item" href="#">Brawl</a>
-        <a class="dropdown-item" href="#">EDH</a>
-        <a class="dropdown-item" href="#">EDH Multiple</a>
-      </div>
-    </div>
+    <select name="" id="game-type">
+        <option value="standard">Standard</option>
+        <option value="brawl">Brawl</option>
+        <option value="edh">EDH</option>
+        <option value="edh-multiple">EDH Multiple</option>
+    </select>
+    <button class="btn btn-secondary" id="reset">Reset</button>
 
     <script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
