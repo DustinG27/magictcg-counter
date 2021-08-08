@@ -9,23 +9,34 @@ const playerOne = document.querySelector("#playerone");
 const playerTwo = document.querySelector("#playertwo");
 
 // setting life totals to 0
-playerOne = 0;
-playerTwo = 0;
+counterOne = 0;
+counterTwo = 0;
+
+// connecting the totals to the html
+playerOne.append(counterOne);
+playerTwo.append(counterTwo);
 
 
 lifeGain.addEventListener('click', function() {
-    alert("click");
+    counterOne += 1;
+    playerOne.textContent = counterOne;
 })
 
 lifeLoss.addEventListener('click', function() {
-    alert("click");
+    counterOne -= 1;
+    playerOne.textContent = counterOne;
 })
 
 lifeGainTwo.addEventListener('click', function() {
-    alert("click");
+    counterTwo += 1;
+    playerTwo.textContent = counterTwo;
 })
 
 lifeLossTwo.addEventListener('click', function() {
-    alert("click");
+    counterTwo -= 1;
+    playerTwo.textContent = counterTwo;
 })
 
+function gameState() {
+    
+}
